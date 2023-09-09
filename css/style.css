@@ -1,0 +1,314 @@
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+    /* по умолчанию */
+}
+
+body {
+    line-height: 1;
+    background-color: grey;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* ------------------------------ */
+
+.main {
+    padding: 50px 0 100px 0;
+}
+
+._container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.main__margin {
+    margin-bottom: 100px;
+}
+
+.position-name {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 34px;
+    background-color: cadetblue;
+    padding: 30px;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+}
+
+.values {
+    background-color: rgba(0, 0, 255, 0.515);
+    color: bisque;
+    display: inline-block;
+    padding: 10px;
+}
+
+.example {
+    font-size: 16px;
+    color: yellow;
+}
+
+
+.block-1 {
+    border: 3px solid black;
+}
+
+.block-1__position-name {
+    margin-bottom: 30px;
+}
+
+.block-1__item {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.block-1__item_brown {
+    background-color: brown;
+    top: 100px;
+    left: 50px;
+}
+
+.block-1__item_purple {
+    background-color: purple;
+    top: -90px;
+
+}
+
+.block-1__item_green {
+    background-color: green;
+    top: 35px;
+    right: 30px;
+}
+
+/*------------------------ */
+.block-2 {
+    border: 3px solid black;
+}
+
+.block-2__position-name {
+    margin-bottom: 30px;
+}
+
+.block-2__item {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.block-2__item_brown {
+    background-color: brown;
+    top: 30px;
+    right: 75px;
+    z-index: 5;
+}
+
+.block-2__item_purple {
+    background-color: purple;
+    top: 20px;
+}
+
+.block-2__item_green {
+    background-color: green;
+    bottom: 200px;
+    left: 200px;
+}
+
+/*------------------------ */
+.block-3 {
+    border: 3px solid black;
+}
+
+.block-3__position-name {
+    margin-bottom: 30px;
+}
+
+.block-3__item {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.block-3__item_brown {
+    background-color: brown;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+}
+
+.block-3__item_purple {
+    background-color: purple;
+}
+
+.block-3__item_green {
+    background-color: green;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* !----ABSOLUTE---- */
+
+.block-4 {
+    border: 3px solid black;
+    position: relative;
+}
+
+.block-4__position-name {
+    background-color: wheat;
+    color: red;
+}
+
+.block-4__example {
+    color: black;
+    font-size: 20px;
+    text-shadow: none;
+    font-weight: 700;
+}
+
+.block-4_values {}
+
+.values {}
+
+.block-4__item {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.block-4__item_brown {
+    background-color: brown;
+    position: absolute;
+    top: -50px;
+    left: 50px;
+}
+
+
+.block-4__item_purple {
+    background-color: purple;
+}
+
+
+.block-4__item_green {
+    background-color: green;
+}
+
+/*------------------------ */
+.task {
+    background: #F5F5F5;
+    position: relative;
+}
+
+.who-we-are {
+    background: #5D62B5;
+    border-radius: 40px;
+    padding: 100px 87px 0px 87px;
+}
+
+.who-we-are::after {
+    content: "";
+    display: inline-block;
+    background: url(../img/who_we_are/circles.svg) 0 0 no-repeat;
+    width: 201px;
+    height: 317px;
+    position: absolute;
+    top: -110px;
+    left: 1160px;
+}
+
+._container {}
+
+.who-we-are__subtitle {
+    background: url(../img/who_we_are/icon.svg) 0 -2px no-repeat;
+    margin-bottom: 33px;
+    padding-left: 34px;
+
+    color: #F5F5F5;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.who-we-are__title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.16;
+    margin-bottom: 36px;
+}
+
+.who-we-are__text {
+    color: #F5F5F5;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+}
+
+.image {
+    margin: 0 auto;
+}
+.image img{
+    border-radius: 50px;
+    position: relative;
+    top: 80px;
+}
